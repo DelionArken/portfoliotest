@@ -1,7 +1,229 @@
-<!doctype html>
+﻿<!DOCTYPE HTML>
 <html>
-<title>Test?</title>
-<body>
-Hello
+<head>
+    <title>The Gallery</title>
+    <link href="gallery.css" type="text/css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="icon.ico" />
+</head>
+<script lang="javascript" type="text/javascript"> 
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "http://m.delion.epizy.com";
+        }
+</script>
+<body style="background-color: lightgray;">
+
+    <div id="index" class="index">
+        <div class="title">
+            <img src="header.png" style="position: absolute; left: 5px; bottom: 5px; height: 100%; width: 100%; filter: saturate(0);" />
+            D&egrave;lion's Gallery
+
+            <img src="info.png" class="infoButton" onclick="openInfo()"/>
+
+            <div id="infoBox" class="info">
+                For More Information: <br />
+                D&egrave;lion Arken<br />  
+                delion.arken@gmail.com<br />
+            </div>
+            <div class="normalText">A Collection of my earlier works for those interested</div>
+        </div>
+    </div>
+
+    
+
+        <img src="corner.png" style="position:absolute; left: 10px; top: 10px; height: 25%; filter: saturate(0);"/>
+        <img src="corner.png" style="position:absolute; right: 10px; top: 10px; height: 25%; filter: saturate(0); transform: scaleX(-1)"/>
+	
+	<div class="thumbContainer">
+            <img class="thumb" src="Thumb/01.png" onclick="currentSlide(1)" />
+            <img class="thumb" src="Thumb/02.png" onclick="currentSlide(2)" />
+            <img class="thumb" src="Thumb/03.png" onclick="currentSlide(3)" />
+            <img class="thumb" src="Thumb/04.png" onclick="currentSlide(4)" />
+            <img class="thumb" src="Thumb/05.png" onclick="currentSlide(5)" />
+            <img class="thumb" src="Thumb/06.png" onclick="currentSlide(6)" />
+            <img class="thumb" src="Thumb/07.png" onclick="currentSlide(7)" />
+            <img class="thumb" src="Thumb/08.png" onclick="currentSlide(8)" />
+            <img class="thumb" src="Thumb/09.png" onclick="currentSlide(9)" />
+            <img class="thumb" src="Thumb/10.png" onclick="currentSlide(10)" />
+            <img class="thumb" src="Thumb/11.png" onclick="currentSlide(11)" />
+            <img class="thumb" src="Thumb/12.png" onclick="currentSlide(12)" />
+            <img class="thumb" src="Thumb/13.png" onclick="currentSlide(13)" />
+            <img class="thumb" src="Thumb/14.png" onclick="currentSlide(14)" />
+            <img class="thumb" src="Thumb/15.png" onclick="currentSlide(15)" />
+            <img class="thumb" src="Thumb/16.png" onclick="currentSlide(16)" />
+            <img class="thumb" src="Thumb/17.png" onclick="currentSlide(17)" />
+            <img class="thumb" src="Thumb/18.png" onclick="currentSlide(18)" />
+            <img class="thumb" src="Thumb/19.png" onclick="currentSlide(19)" />
+			<img class="thumb" src="Thumb/20.png" onclick="currentSlide(20)" />
+			<img class="thumb" src="Thumb/21.png" onclick="currentSlide(21)" />
+        </div>
+
+    <div class="container">
+
+        <div class="galleryImages fade activeImage" id="0">
+            <img src="001/01.png" class="imageStyle" onclick="currentSlide(1)">
+        </div>
+
+        <div class="galleryImages fade rightTransitionImage" id="1">
+            <img src="001/02.png" class="imageStyle" onclick="currentSlide(2)">
+        </div>
+
+        <div class="galleryImages fade" id="2">
+            <img src="001/03.png" class="imageStyle" onclick="currentSlide(3)">
+        </div>
+
+        <div class="galleryImages fade" id="3">
+            <img src="001/04.png" class="imageStyle" onclick="currentSlide(4)">
+        </div>
+
+        <div class="galleryImages fade" id="4">
+            <img src="001/05.png" class="imageStyle" onclick="currentSlide(5)">
+        </div>
+
+        <div class="galleryImages fade" id="5">
+            <img src="001/06.png" class="imageStyle" onclick="currentSlide(6)">
+        </div>
+
+        <div class="galleryImages fade" id="6">
+            <img src="001/07.png" class="imageStyle" onclick="currentSlide(7)">
+        </div>
+
+        <div class="galleryImages fade" id="7">
+            <img src="001/08.png" class="imageStyle" onclick="currentSlide(8)">
+        </div>
+
+        <div class="galleryImages fade" id="8">
+            <img src="001/09.png" class="imageStyle" onclick="currentSlide(9)">
+        </div>
+
+        <div class="galleryImages fade" id="9">
+            <img src="001/10.png" class="imageStyle" onclick="currentSlide(10)">
+        </div>
+
+        <div class="galleryImages fade" id="10">
+            <img src="001/11.png" class="imageStyle" onclick="currentSlide(11)">
+        </div>
+
+        <div class="galleryImages fade" id="11">
+            <img src="001/12.png" class="imageStyle" onclick="currentSlide(12)">
+        </div>
+
+        <div class="galleryImages fade" id="12">
+            <img src="001/13.png" class="imageStyle" onclick="currentSlide(13)">
+        </div>
+
+        <div class="galleryImages fade" id="13">
+            <img src="001/14.png" class="imageStyle" onclick="currentSlide(14)">
+        </div>
+
+        <div class="galleryImages fade" id="14">
+            <img src="001/15.png" class="imageStyle" onclick="currentSlide(15)">
+        </div>
+
+        <div class="galleryImages fade" id="15">
+            <img src="001/16.png" class="imageStyle" onclick="currentSlide(16)">
+        </div>
+
+        <div class="galleryImages fade" id="16">
+            <img src="001/17.png" class="imageStyle" onclick="currentSlide(17)">
+        </div>
+
+        <div class="galleryImages fade" id="17">
+            <img src="001/18.png" class="imageStyle" onclick="currentSlide(18)">
+        </div>
+
+        <div class="galleryImages fade" id="18">
+            <img src="001/19.png" class="imageStyle" onclick="currentSlide(19)">
+        </div>
+
+        <div class="galleryImages fade" id="19">
+            <img src="001/20.png" class="imageStyle" onclick="currentSlide(20)">
+        </div>
+
+        <div class="galleryImages fade" id="20">
+            <!--<video id="20Vid" class="imageStyle" onclick="currentSlide(21)" autoplay loop poster="001/21Poster.png" src="https://drive.google.com/file/d/1PiMlPL-AZgdnO30QIM-4_s2fG9irFF-h/view?usp=sharing" />-->
+            <img src="001/21Poster.png" class="imageStyle" onclick="currentSlide(21)" id="20Poster">
+            <div id="20Vid" class="imageStyle" style="width:100%; height:0px; position:relative; padding-bottom:56.250%; display:none;">
+                <iframe id="Video" src="https://streamable.com/s/xq62t/mhzglx" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+            </div>
+        </div>
+    </div>
+        <br>
+
+        
 </body>
 </html>
+<script lang="javascript" type="text/javascript">
+    var slideIndex = 1;
+    var infoVis = false;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function openInfo() {
+        if (infoVis == false) {
+            document.getElementById("infoBox").style.opacity = "1";
+            document.getElementById("infoBox").style.width = "200px";
+            document.getElementById("infoBox").style.right = "-200px";
+            infoVis = true;
+        } else {
+            document.getElementById("infoBox").style.removeProperty("opacity");
+            document.getElementById("infoBox").style.removeProperty("width");
+            document.getElementById("infoBox").style.removeProperty("right");
+            infoVis = false;
+        }
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("galleryImages");
+        var thumbs = document.getElementsByClassName("thumb");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].className = "galleryImages";
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < thumbs.length; i++) {
+            thumbs[i].className = thumbs[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].className += " fade activeImage";
+        if (n > 1) {
+            slides[slideIndex - 2].className += " fade2 leftTransitionImage";
+            slides[slideIndex - 2].style.display = "block";
+        }
+        if (n == 1) {
+            slides[slides.length - 1].className += " fade2 leftTransitionImage"; 
+            slides[slides.length - 1].style.display = "block";
+        }
+        if (n == slides.length) {
+            slides[0].className += " fade2 rightTransitionImage";
+            slides[0].style.display = "block";
+        } else {
+            slides[slideIndex].className += " fade2 rightTransitionImage";
+            slides[slideIndex].style.display = "block";
+        }
+        thumbs[slideIndex - 1].className += " active";
+
+        var VidContainer = document.getElementById("20Vid");
+        var iframeVid = document.getElementById("Video");
+        //var vidSrc = iframeVid.getAttribute("src");
+
+        if (slideIndex == 21) {
+            document.getElementById("20Poster").style.display = "none";
+            VidContainer.style.display = "block";
+            iframeVid.setAttribute("src", "https://streamable.com/s/xq62t/mhzglx");
+
+        } else {
+            document.getElementById("20Poster").style.display = "block";
+            VidContainer.style.display = "none";
+            iframeVid.setAttribute("src", "");
+        }
+    }
+</script>

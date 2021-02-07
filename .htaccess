@@ -1,0 +1,10 @@
+ErrorDocument 401 /401
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+
+RewriteEngine on
+RewriteCond %(REQUEST_TILENAME) !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+Options -Indexes
